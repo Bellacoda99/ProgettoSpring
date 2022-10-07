@@ -11,7 +11,7 @@ pipeline {
       stage('jdk 17') {
     tools {
         maven 'mvnapp'
-        jdk 'JDKlink'
+        jdk 'JDK17'
   }
       steps {
           sh 'echo $JAVA_HOME'
