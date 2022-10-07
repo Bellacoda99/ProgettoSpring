@@ -1,15 +1,16 @@
 pipeline {
   agent any
-  tools {
-    maven 'mvnapp'
-    jdk 'JDK17'
-  }
+
     
     
   stages {
 
 
       stage('jdk 17') {
+    tools {
+        maven 'mvnapp'
+        jdk 'JDK17'
+  }
       steps {
 
           sh 'java -version'
