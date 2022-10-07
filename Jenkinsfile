@@ -2,7 +2,7 @@ pipeline {
   agent any
   tools {
     maven 'mvnapp'
-    java 'JDK17'
+    jdk 'JDK17'
   }
     
     
